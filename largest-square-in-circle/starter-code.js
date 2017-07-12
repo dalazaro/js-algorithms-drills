@@ -1,5 +1,7 @@
 function largestSquareAreaInCircle(r) {
-
+  diameter = 2 * r;
+  side = diameter / 2;
+  areaSquare = Math.pow(side, 2);
 }
 
 console.log(largestSquareAreaInCircle(5)); //50

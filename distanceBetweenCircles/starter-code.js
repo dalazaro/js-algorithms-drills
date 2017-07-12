@@ -12,7 +12,7 @@ function distanceBetweenCircles(circle1, circle2) {
   //distance between circles = distance - (circle 1 radius + circle 2 radius)
   var distance = distanceBetweenPoints - (circle1.radius + circle2.radius);
 
-  if (distance <= 0) {
+  if (distanceBetweenPoints <= 0) {
     distance = 0;
   }
 

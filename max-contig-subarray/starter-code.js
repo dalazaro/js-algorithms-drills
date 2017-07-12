@@ -1,5 +1,17 @@
 function maxContigSubarray(arr) {
+  var greatestSum = [];
 
+  for (i = 0; i <= arr.length; i++) {
+    var sum1 = arr[i] + arr[i + 1];
+    var sum2 = arr[i + 1] + arr[i + 2];
+
+    greatestSum.push(sum1);
+
+    if (sum2 > sum1){
+      greatestSum.pop();
+      greatestSum.push(sum2);
+    }
+  };
 }
 
 testArr1 = [4,7,-1,-12,7];
